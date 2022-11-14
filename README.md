@@ -1,5 +1,5 @@
 # TIL
 Today I Learned
 ***
-* JAVA
->>test
+JAVA
+*test
