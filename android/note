@@ -1,0 +1,7 @@
+22.11.15
+material은 dependencies에 기본으로 추가가 되있다.
+
+drawable 우클릭 -> new -> vector asset에서 원하는 아이콘을 찾아서 사용
+
+bottom navigation을 통해서 fragment를 나누면 MainActivity는 그저 fragment를 갈아끼우는 틀 역할인가
+
