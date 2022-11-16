@@ -5,3 +5,15 @@ drawable 우클릭 -> new -> vector asset에서 원하는 아이콘을 찾아서
 
 bottom navigation을 통해서 fragment를 나누면 MainActivity는 그저 fragment를 갈아끼우는 틀 역할인가
 
+22.11.16
+appbar는 이쁘게 꾸밀수가 없다.
+material 디자인 https://m2.material.io/components/app-bars-top/android#regular-top-app-bar
+android 페이지 https://developer.android.com/guide/fragments/appbar?hl=ko
+다 뒤져보고 구글에 찾아봐도 원하는 appbar를 만들수 없었다.
+
+NestedScrollView가 대세라 한다.
+이거 안에 LinearLayout
+그안에 RecyclerView를 넣는 방식
+모든 view들을 함께 스크롤 가능하게 한다.
+근데 이렇게하면 재사용이 안되서 viewHolder를 사용하여 관리한다고 한다
+스크롤도 만들고 아이템도 넣었는데 왜 appbar가 안줄어들까 material 페이지 따라서 다했는데.. 에뮬레이터라서 그런건가
