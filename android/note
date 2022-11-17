@@ -17,3 +17,27 @@ NestedScrollView가 대세라 한다.
 모든 view들을 함께 스크롤 가능하게 한다.
 근데 이렇게하면 재사용이 안되서 viewHolder를 사용하여 관리한다고 한다
 스크롤도 만들고 아이템도 넣었는데 왜 appbar가 안줄어들까 material 페이지 따라서 다했는데.. 에뮬레이터라서 그런건가
+
+Toy-project의 timelinefragment에 NestedScrollView를 넣었다.
+
+22.11.17
+appbar가 줄어든다. ㅎ
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            ...
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:contentScrim="?attr/colorPrimary"
+            app:statusBarScrim="?attr/colorPrimaryVariant">
+            ...
+            <com.google.android.material.appbar.MaterialToolbar
+                ...
+                app:layout_collapseMode="pin"
+                />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+이 부분을 추가 했더니 appbar가 줄었다 늘었다 한다.
+
+homefragment랑 ticketboxfragment랑, settingfragment도 추가했다.
+
+data binding이란게 있길래 해볼랬는데 안된다.
+여러 사이트들이 같은방식으로하는데 나만 빨간줄.. 나만 바보다.
+내일 해야지
+
