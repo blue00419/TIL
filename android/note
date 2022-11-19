@@ -41,3 +41,9 @@ data binding이란게 있길래 해볼랬는데 안된다.
 여러 사이트들이 같은방식으로하는데 나만 빨간줄.. 나만 바보다.
 내일 해야지
 
+22.11.19
+data binding은 제외하고 진행.
+material 디자인을 사용해서 회원가입, 로그인 페이지 만듬
+회원가입 페이지랑 로그인 페이지 서로 이동 시 원래 있던 화면을 꺼서 <-버튼 클릭하면 메인으로 돌아오게 설정.
+ticketboxfragment에서 item 클릭 시 각 타이틀에 맞는 티켓 정보 출력하는 화면 생성
+(AccountActivity, LoginActivity, TicketboxActivity 생성)
