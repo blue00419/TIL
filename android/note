@@ -45,5 +45,22 @@ data binding이란게 있길래 해볼랬는데 안된다.
 data binding은 제외하고 진행.
 material 디자인을 사용해서 회원가입, 로그인 페이지 만듬
 회원가입 페이지랑 로그인 페이지 서로 이동 시 원래 있던 화면을 꺼서 <-버튼 클릭하면 메인으로 돌아오게 설정.
+(
+        Intent intent = new Intent(getApplicationContext(), AccountActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        finish();
+)
 ticketboxfragment에서 item 클릭 시 각 타이틀에 맞는 티켓 정보 출력하는 화면 생성
+fragment의 adapter에서 새로운 activity 부르는 방법
+(
+        LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.ticket_linear);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), TicketboxActivity.class);
+                view.getContext().startActivity(intent);
+            }
+        });
+)
 (AccountActivity, LoginActivity, TicketboxActivity 생성)
