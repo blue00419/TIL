@@ -1,0 +1,24 @@
+python -m venv toy // 가상환경 생성
+
+conda activate toy // 가상환경 접속
+
+pip install django // 장고 설치
+
+pip install djangorestframework // 장고 rest framework 설치
+
+django-admin startproject toy // 프로젝트 생성
+
+python manage.py startapp project // app 생성
+
+settings.py 에서 db설정
+
+pip install mysqlclient // mariadb 쓸 준비
+
+ngrok를 이용해서 디바이스에서 로컬에 접근이 가능하게 설정
+
+mariadb 테이블 만들고 serializers, models, urls 설정
+
+android에서 retrofit2를 이용하여 get, post 테스트 완료
+
+회원가입 post 만듬 세부 설정 해야함.
+
