@@ -71,3 +71,7 @@ db는 mariadb 사용
 django에 account 모델 생성
 android에서 get, post 테스트 완료
 회원가입 post 생성
+android에서 local에 접속하기 위해 ngrok를 사용했다.
+이제 계속 이걸 여기에 나오는 주소값을 apiService 클래스에 변경시켜줘야 연결이 된다...
+실행 파일은 폴더에 함께 넣어뒀다.
+실행법은 키고 ngrok http 8080엔터
