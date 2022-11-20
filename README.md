@@ -5,6 +5,9 @@ JAVA
 * [test](https://github.com/blue00419/TIL/blob/main/Java/test.md)
 * [test2](https://github.com/blue00419/TIL/blob/main/test)
 
+Algorithm
+* [Note](https://github.com/blue00419/TIL/blob/main/algorithm/note)
+
 Android
 * [Note](https://github.com/blue00419/TIL/blob/main/android/note)
 
