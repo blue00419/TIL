@@ -75,3 +75,12 @@ android에서 local에 접속하기 위해 ngrok를 사용했다.
 이제 계속 이걸 여기에 나오는 주소값을 apiService 클래스에 변경시켜줘야 연결이 된다...
 실행 파일은 폴더에 함께 넣어뒀다.
 실행법은 키고 ngrok http 8080엔터
+
+22.11.21
+회원가입시 중복 체크
+android에서 데이터를 보낼 때 csrfmiddlewaretoken가 없어서 django에서 403 error가 엉청 났다.
+settings에서 꺼버리고
+데이터를 json.loads(request.body.decode('utf-8')) 이런식으로 받아서 회원가입을 진행했다.
+
+로그인시 이메일과 비밀번호를 입력해서 계정이 있다면 닉네임을 받아오려고하는데 잘안된다..
+
