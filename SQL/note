@@ -1,11 +1,13 @@
 INSERT INTO STORE VALUES ('AAA', 100) // 값 넣기
 
 SELECT / FROM / WHERE / GROUP BY / HAVING / ORDER BY
+max / min / count / avg / sum
 
 SELECT * FROM BASE // 전체
 SELECT A, sum(B) FROM BASE GROUP BY A // A랑 B 출력하는데 B는 A가같은 애들은 더해서 출력
+SELECT BRANCH_ID, sum(SALARY) AS TOTAL FROM EMPLOYEES WHERE BRANCH_ID > 10 AND BRANCH_ID < 20 GROUP BY BRANCH_ID ORDER BY BRANCH_ID ASC
 BRANCH_ID AS ID // BRANCH_ID를 ID로 출력
 select * from student where name = '김%'; // 김모씨들
-SELECT BRANCH_ID, sum(SALARY) AS TOTAL FROM EMPLOYEES WHERE BRANCH_ID > 10 AND BRANCH_ID < 20 GROUP BY BRANCH_ID ORDER BY BRANCH_ID ASC
 select * from student limit 1; // 1개 라인만
 select distinct name from student; // 중복 제거
+select A.a, A.b, B.c from A join B where B.a = A.c
