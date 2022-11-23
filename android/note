@@ -98,3 +98,13 @@ String responsenickname = response.body().getNickname();
 int responsecode = response.body().getCode();
 String responsemsg = response.body().getMsg();
 이제 이걸 이용해서 로그인이랑 회원가입을 마무리 하면된다 ㅎ..
+
+로그인 시 SettingFragment에 있는 로그인 버튼 로그아웃 버튼으로 변경
+Preference를 이용해서 로그인 시 사용자 닉네임을 저장.
+로그아웃 시 똑같이 로그인 버튼으로 변경
+preference 초기화
+
+
+
+
+
