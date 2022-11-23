@@ -84,3 +84,17 @@ settings에서 꺼버리고
 
 로그인시 이메일과 비밀번호를 입력해서 계정이 있다면 닉네임을 받아오려고하는데 잘안된다..
 
+22.11.23
+django에서 원하는 데이터를 android에서 받아보는게 잘안됬었는데 드디어 해결!
+a = {
+    "code": 200,
+    "nickname": c.nickname,
+    "msg": "로그인 성공"
+}
+return HttpResponse(json.dumps(a), content_type="application/json")
+요런식으로 보내고 싶은 데이터를 json형식으로 httpresponse를 이용해서 보내고
+android에서는 같은 데이터 형식으로 model을 만들어서 데이터를 받았다.
+String responsenickname = response.body().getNickname();
+int responsecode = response.body().getCode();
+String responsemsg = response.body().getMsg();
+이제 이걸 이용해서 로그인이랑 회원가입을 마무리 하면된다 ㅎ..
