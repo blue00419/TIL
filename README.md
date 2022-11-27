@@ -2,7 +2,7 @@
 Today I Learned
 ***
 JAVA   
-* [Note](https://github.com/blue00419/TIL/blob/main/Java/note)
+[Note](https://github.com/blue00419/TIL/blob/main/Java/note)
 
 Algorithm
 * [Note](https://github.com/blue00419/TIL/blob/main/algorithm/note)
