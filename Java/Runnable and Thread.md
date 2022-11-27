@@ -19,9 +19,8 @@ start()의 역할은 new 상태에 있는 쓰레디를 runnable한 상태로 되
 6. 그후 override된 run()을 호출해서 동작한다.
 7. 2~5의 과정이 start()가 thread를 new 상태에서 run()이 가능한 상태로 만들어 준다는 말이다.
 
-
-1. thread를 new해서 한개 만든다.
-2. run()을 바로 호출한다.
-3. 위에서 2~5번의 과정이 빠져 생성된 thread가 뭐하는 놈인지 알 길이 없는데 돌려버린게 된다.
+- thread를 new해서 한개 만든다.
+- run()을 바로 호출한다.
+- 위에서 2~5번의 과정이 빠져 생성된 thread가 뭐하는 놈인지 알 길이 없는데 돌려버린게 된다.
 
 하나의 thread는 두번 start() 시키면 exception이 난다.
