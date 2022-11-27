@@ -15,9 +15,11 @@ WAS와 DB 서버가 각각 동작하고 WAS가 Web Server의 역할도 수행
 Web, WAS, DB가 각각의 Server에서 동작
 
 Front-End
-* 사용자에게 보이는 영역(view?)
+사용자에게 보이는 영역(view?)
 html, css, javascript
 
 Back-End
+사용자의 눈에 보이지 않는 영역
 동적 데이터를 처리하는 영역(Controlloer + Model?)
+서버, db, api 등
 node.js, java, python 등
