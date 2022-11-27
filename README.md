@@ -2,8 +2,7 @@
 Today I Learned
 ***
 JAVA   
-* [test](https://github.com/blue00419/TIL/blob/main/Java/test.md)
-* [test2](https://github.com/blue00419/TIL/blob/main/test)
+
 
 Algorithm
 * [Note](https://github.com/blue00419/TIL/blob/main/algorithm/note)
@@ -22,9 +21,10 @@ On-Premise
 * 클라우드와 온프레미스를 함께 사용하는 하이브리드 IT 인프라
 
 객체 지향 프로그래밍
+* [Note](https://github.com/blue00419/TIL/blob/main/OOP/note)
 
 절차 지향 프로그래밍
 
 DBMS
 
-
+class 와 구조체 차이
