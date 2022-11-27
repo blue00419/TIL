@@ -1,0 +1,23 @@
+Web Server = 정적 Web page를 생성하여 client pc에 전달
+(View)
+Web Application Server(WAS) = Web server의 요청에 따라 동적 Data를 생산하여 Web Server에 전달
+(Controller)
+DB Server = WAS에 필요한 동적 data를 읽을 때 사용, WAS에 생성한 동적 data를 저장하는 데 사용
+(Model)
+
+1tier(1계층)
+WAS + DB가 물리적 한 server에서 동작하며 WAS가 Web Server의 역할도 수행
+
+2tier
+WAS와 DB 서버가 각각 동작하고 WAS가 Web Server의 역할도 수행
+
+3tier
+Web, WAS, DB가 각각의 Server에서 동작
+
+Front-End
+* 사용자에게 보이는 영역(view?)
+html, css, javascript
+
+Back-End
+동적 데이터를 처리하는 영역(Controlloer + Model?)
+java, python 등
