@@ -1,0 +1,47 @@
+1. MVC
+model = 앱에서 사용되는 데이터와 그 데이터를 처리하는 부분
+view = 사용자에게 보여지는 ui
+controller = 입력을 받고 처리하는 부분
+
+동작
+controller를 통해 입력을 받고 model을 업데이트
+model을 나타내줄 view를 선택
+view가 model을 이용해서 화면을 나타냄
+
+특징
+controller는 여러개의 view를 선택할 수 있다.
+단순해서 가장 보편적으로 사용되는 디자인패턴.
+view와 model의 의존성이 높아서 유지보수가 어렵다.
+(의존성이 높다는 것은 view와 model이 독립적이지 않아서 view에서 코드를 수정하면 model에서도 코드의 변화가 필요하다는 것)
+2. MVP
+presenter = view와 model을 이어주는 중간다리 역할
+
+동작
+view를 통해 입력이 들어온다.
+presenter에게 데이터를 요청
+model에게 데이터를 요청
+다시 반대로 데이터를 응답
+
+특징
+presenter와 view는 1:1관계
+MVC 패턴의 단점이였던 view와 model의 의존성을 해결
+view와 presenter사이의 의존성이 높아짐
+
+3. MVVM
+view model = view를 나타내 주기 위한 model이자 view를 나타내기 위한 데이터를 처리하는 부분
+
+동작
+view를 통해 입력이 들어온다.
+command 패턴으로 view model에 입력을 전달한다.
+view model은 model에게 데이터를 요청한다.
+model에게 받은 데이터를 가공하여 저장한다.
+view는 view model과 data binding하여 화면을 나타낸다.
+
+특징
+view model과 view는 1:n관계
+의존성을 없앴다.
+각각의 부분은 독립적이기 때문에 모듈화하여 개발할 수 있다.
+하지만 설계가 쉽지않다.
+
+command 패턴은 요청을 객체의 형태로 캡슐화하여 사용자가 보낸 요청을 나중에 사용할 수 있도록 매서드 이름, 매개변수 등 요청에 필요한 정보를 저장하는 패턴.
+data binding은 ui(view)와 데이터(view model)을 프로그램적 방식으로 연결하지 않고, 선언적 형식으로 결합한다.
